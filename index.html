@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Circular Slider</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <h1 class="slider-title" id="slide-title">Hot Air Balloon</h1>
+        
+        <div class="slider-wrapper">
+            <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous slide">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            
+            <div class="slides-container" id="slidesContainer">
+                <div class="slide" data-slide="1" tabindex="0" role="button" aria-label="Go to slide 1">
+                    <img src="/images/furina.jpg" alt="Furina">
+                    <span class="slide-label">Number 1</span>
+                    <div class="slide-description">Furina</div>
+                </div>
+                <div class="slide" data-slide="2" tabindex="0" role="button" aria-label="Go to slide 2">
+                    <img src="/images/Marin Kitagawa.jpg" alt="Marin Kitagawa">
+                    <span class="slide-label">Number 2</span>
+                    <div class="slide-description">Marin Kitagawa</div>
+                </div>
+                <div class="slide active" data-slide="3" tabindex="0" role="button" aria-label="Go to slide 3">
+                    <img src="/images/Nodoka Toyohama.webp" alt="Nodoka Toyohama">
+                    <span class="slide-label">Number 3</span>
+                    <div class="slide-description">Nodoka Toyohama</div>
+                </div>
+                <div class="slide" data-slide="4" tabindex="0" role="button" aria-label="Go to slide 4">
+                    <img src="/images/Sera.webp" alt="Sera">
+                    <span class="slide-label">Number 4</span>
+                    <div class="slide-description">Sera</div>
+                </div>
+                <div class="slide" data-slide="5" tabindex="0" role="button" aria-label="Go to slide 5">
+                    <img src="/images/Seri Kikyou.jpg" alt="Seri Kikyou">
+                    <span class="slide-label">Number 5</span>
+                    <div class="slide-description">Seri Kikyou</div>
+                </div>
+            </div>
+            
+            <button class="nav-btn next-btn" id="nextBtn" aria-label="Next slide">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </div>
+        
+        <div class="dots-container" role="tablist" aria-label="Slide navigation">
+            <span class="dot" data-slide="1" role="tab" tabindex="0" aria-label="Go to slide 1"></span>
+            <span class="dot" data-slide="2" role="tab" tabindex="0" aria-label="Go to slide 2"></span>
+            <span class="dot active" data-slide="3" role="tab" tabindex="0" aria-label="Go to slide 3"></span>
+            <span class="dot" data-slide="4" role="tab" tabindex="0" aria-label="Go to slide 4"></span>
+            <span class="dot" data-slide="5" role="tab" tabindex="0" aria-label="Go to slide 5"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
